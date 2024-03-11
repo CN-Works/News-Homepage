@@ -1,60 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
   
-  <title>Frontend Mentor | News homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
+  <header>
+    <figure class="header-logo-fig">
+      <img class="header-logo-img" src="./assets/images/logo.svg" alt="Logo of the News">
+    </figure>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <div class="header-linkslist">
+      <a class="header-link" href="">Home</a>
+      <a class="header-link" href="">New</a>
+      <a class="header-link" href="">Popular</a>
+      <a class="header-link" href="">Trending</a>
+      <a class="header-link" href="">Categories</a>
+    </div>
+  </header>
 
-  The Bright Future of Web 3.0?
+  <main>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+    <div class="topnews">
+      <div class="bignews">
+        <figure>
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Big news image">
+        </figure>
   
-  <div class="attribution">
+        <div class="bignews-details">
+          <h1>The Bright Future of Web 3.0?</h2>
+  
+          <div class="bignews-description">
+            <p class="bignews-description-text">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <a class="bignews-description-button" href="">Read more</a>
+          </div>
+        </div> 
+      </div>
+
+      <div class="newslist">
+        <p class="newslist-title">New</p>
+  
+        <div class="newslist-card">
+          <h2 class="newslist-card-title">Hydrogen VS Electric Cars</h2>
+          <p class="newslist-card-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+  
+        <div class="newslist-card">
+          <h2 class="newslist-card-title">The Downsides of AI Artistry</h2>
+          <p class="newslist-card-description">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+  
+        <div class="newslist-card">
+          <h2 class="newslist-card-title">Is VC Funding Drying Up?</h2>
+          <p class="newslist-card-description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="bottomnews">
+      <div class="bottomnews-card">
+        <figure class="bottomnews-card-fig">
+          <img class="bottomnews-card-img" src="./assets/images/image-retro-pcs.jpg" alt="First news image">
+        </figure>
+
+        <div class="bottomnews-card-details">
+          <p class="bottomnews-card-number">01</p>
+
+          <h2 class="bottomnews-card-title">Reviving Retro PCs</h2>
+
+          <p class="bottomnews-card-description">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="bottomnews-card">
+        <figure class="bottomnews-card-fig">
+          <img class="bottomnews-card-img" src="./assets/images/image-top-laptops.jpg" alt="Second news image">
+        </figure>
+
+        <div class="bottomnews-card-details">
+          <p class="bottomnews-card-number">02</p>
+
+          <h2 class="bottomnews-card-title">Top 10 Laptops of 2022</h2>
+
+          <p class="bottomnews-card-description">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="bottomnews-card">
+        <figure class="bottomnews-card-fig">
+          <img class="bottomnews-card-img" src="./assets/images/image-gaming-growth.jpg" alt="Third news image">
+        </figure>
+
+        <div class="bottomnews-card-details">
+          <p class="bottomnews-card-number">03</p>
+
+          <h2 class="bottomnews-card-title">The Growth of Gaming</h2>
+
+          <p class="bottomnews-card-description">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/CN-Works">CN-Works</a>.
+  </footer>
 </body>
 </html>
