@@ -9,6 +9,10 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
+*figure {
+  user-select: none;
+}
+
 *img {
   user-select: none;
 }
@@ -16,7 +20,7 @@ a, a:visited, a:hover, a:active {
 :root {
     --soft-orange : hsl(35, 77%, 62%);
     --soft-red : hsl(5, 85%, 63%);
-    /* Nuances */
+
     --off-white : hsl(36, 100%, 99%);
     --grayish-blue : hsl(233, 8%, 79%);
     --dark-grayish-blue: hsl(236, 13%, 42%);
@@ -42,11 +46,42 @@ body {
 
   width: 100%;
   min-height: 100svh;
-  padding: 10%;
+  padding: 7.5%;
 }
 
 header {
   width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+}
+
+.header-logo-fig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+.header-logo-img {
+  height: 100%;
+  width: 100%;
+}
+
+.header-linkslist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.header-link {
+  color: var(--dark-grayish-blue);
 }
 
 main {
