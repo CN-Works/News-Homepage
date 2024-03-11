@@ -1,0 +1,65 @@
+* {
+    font-family: "Inter", 'Poppins';
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+*img {
+  user-select: none;
+}
+
+:root {
+    --soft-orange : hsl(35, 77%, 62%);
+    --soft-red : hsl(5, 85%, 63%);
+    /* Nuances */
+    --off-white : hsl(36, 100%, 99%);
+    --grayish-blue : hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+.unselectable {
+  user-select: none;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100svh;
+  padding: 10%;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.topnews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomnews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
