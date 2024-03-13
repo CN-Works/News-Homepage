@@ -32,7 +32,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 13px; text-align: center;
 }
 
 .attribution a {
@@ -97,7 +97,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  gap: 30px;
+  gap: 50px;
 }
 
 .topnews {
@@ -114,11 +114,17 @@ main {
   height: 100%;
 
   padding: 0 30px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
 }
 
 .bignews-fig {
   width: 100%;
-  height: 50%;
+  height: 60%;
   
   display: flex;
   align-items: center;
@@ -134,14 +140,12 @@ main {
 }
 
 .bignews-details {
-  height: 50%;
+  height: 40%;
   width: 100%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 20px 0;
 }
 
 .bignews-title {
@@ -161,7 +165,9 @@ main {
 
 .bignews-description-text {
   color: var(--dark-grayish-blue);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .bignews-description-button {
@@ -182,14 +188,14 @@ main {
   font-size: 0.9;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .newslist {
   height: 100%;
   width: 30%;
 
-  padding: 15px;
+  padding: 25px;
 
   display: flex;
   flex-direction: column;
@@ -207,11 +213,15 @@ main {
 .newslist-card {
   height: 20%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .newslist-card-title {
   color: var(--off-white);
-  font-size: 1.3rem;
+  font-size: 1.35rem;
 }
 
 .newslist-card-description {
@@ -239,7 +249,7 @@ main {
 
 .bottomnews-card-fig {
   height: 100%;
-  width: 25%;
+  width: 30%;
 
   display: flex;
   justify-content: center;
@@ -260,7 +270,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .bottomnews-card-number {
