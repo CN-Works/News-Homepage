@@ -165,9 +165,8 @@ main {
 
 .bignews-description-text {
   color: var(--dark-grayish-blue);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 30px;
-  letter-spacing: 1px;
 }
 
 .bignews-description-button {
