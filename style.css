@@ -88,6 +88,11 @@ header {
 .header-link {
   color: var(--dark-grayish-blue);
   font-size: 1.1rem;
+  transition: all 0.3s ease-out ;
+}
+
+.header-link:hover {
+  color: var(--soft-orange);
 }
 
 main {
