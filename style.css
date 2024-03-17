@@ -151,10 +151,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .bignews-title {
-  font-size: 4rem;
+  font-size: 3.85rem;
   font-weight: 800;
   width: 45%;
 }
