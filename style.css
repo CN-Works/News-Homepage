@@ -187,6 +187,12 @@ main {
   align-items: center;
 
   user-select: none;
+
+  transition: all 0.3s ease-out ;
+}
+
+.bignews-description-button:hover {
+  background-color: var(--very-dark-blue);
 }
 
 .bignews-description-button-text {
@@ -228,6 +234,12 @@ main {
 .newslist-card-title {
   color: var(--off-white);
   font-size: 1.35rem;
+
+  transition: all 0.3s ease-out;
+}
+
+.newslist-card-title:hover {
+  color: var(--soft-orange);
 }
 
 .newslist-card-description {
@@ -288,6 +300,12 @@ main {
 .bottomnews-card-title {
   color: var(--very-dark-blue);
   font-size: 1.3rem;
+
+  transition: all 0.3s ease-out;
+}
+
+.bottomnews-card-title:hover {
+  color: var(--soft-red);
 }
 
 .bottomnews-card-description {
@@ -295,4 +313,8 @@ main {
   font-size: 0.95rem;
   line-height: 25px;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1920px) {
+
 }
