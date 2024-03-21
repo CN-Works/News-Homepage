@@ -338,12 +338,36 @@ main {
 
 @media screen and (max-width: 1280px) {
   body {
-    padding: 5% 5%;
+    padding: 30px;
+  }
+
+  .bignews-title {
+    font-size: 2.5rem;
   }
 
   .bignews-description-button {
     width: 150px;
     height: 45px;
+  }
+
+  .bignews-description-button-text {
+    font-size: 0.95rem;
+  }
+
+  .newslist {
+    padding: 15px;
+  }
+
+  .newslist-title {
+    font-size: 1.6rem;
+  }
+
+  .newslist-card-title {
+    font-size: 1.2rem;
+  }
+  
+  .newslist-card-description {
+    font-size: 0.8rem;
   }
 
   .bottomnews-card-number {
@@ -357,5 +381,6 @@ main {
   .bottomnews-card-description {
     font-size: 0.85rem;
     line-height: 20px;
+    letter-spacing: normal;
   }
 }
