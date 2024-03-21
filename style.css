@@ -49,7 +49,7 @@ body {
 
   width: 100%;
   min-height: 100svh;
-  padding: 5% 7.5%;
+  padding: 5%;
 }
 
 header {
@@ -151,8 +151,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  overflow: hidden;
 }
 
 .bignews-title {
