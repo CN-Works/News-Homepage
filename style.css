@@ -263,6 +263,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .bottomnews-card-fig {
@@ -317,4 +319,43 @@ main {
 
 @media screen and (max-width: 1920px) {
 
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    padding: 5% 5%;
+  }
+
+  .bignews-title {
+    font-size: 2.8rem;
+  }
+
+  .bignews-description-text {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    padding: 5% 5%;
+  }
+
+  .bignews-description-button {
+    width: 150px;
+    height: 45px;
+  }
+
+  .bottomnews-card-number {
+    font-size: 1.5rem;
+  }
+  
+  .bottomnews-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .bottomnews-card-description {
+    font-size: 0.85rem;
+    line-height: 20px;
+  }
 }
