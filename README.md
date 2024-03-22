@@ -12,4 +12,4 @@ A news home page, front end mentor challenge
 <div align='left'><h1>Direct preview</h1>
 </div>
 
-<a href="https://cn-works.github.io/NewsHomepage/">Click here</a>
+<a href="https://cn-works.github.io/NewsHomepage/" target="_blank">Click here</a>
