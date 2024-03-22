@@ -1,6 +1,3 @@
-# News-Homepage
-A news home page, front end mentor challenge
-
 <div align='center'><h1>News Homepage Challenge</h1>
 </div>
 
