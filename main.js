@@ -21,6 +21,14 @@ $(document).ready(function(){
     // Checking default page size
     burgermenuDisplay();
 
+    $("#burgermenu-openbutton").click(function() {
+        $("#burgermenu-page").fadeIn({duration: 300});
+    })
+
+    $("#burgermenu-closebutton").click(function() {
+        $("#burgermenu-page").fadeOut({duration: 300});
+    })
+
     window.addEventListener('resize', function(event) {
         burgermenuDisplay();
     }, true);
