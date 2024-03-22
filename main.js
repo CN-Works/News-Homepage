@@ -1,14 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // let openButton = document.getElementById("burgermenu-openbutton");
-    // let closeButton = document.getElementById("burgermenu-closebutton");
-    // let burgermenu = document.getElementById("burgermenu-content");
+// Just Checking page size at start
+$(document).ready(function(){
+    // The Higher size for Mobile/Tablet display
+    let mobileSize = 1000;
 
-    // // Ouvre le menu burger en rajoutant la class "active"
-    // openButton.addEventListener("click", function() {
-    //     burgermenu.classList.add('active');
-    // });
+    function burgermenuDisplay() {
+      if (window.innerWidth > mobileSize) {
+          // Hiding burgermenu and open button
+          $("#burgermenu-page").hide();
+          $("#burgermenu-openbutton").hide();
+          // Showing links list
+          $(".header-linkslist").show();
+      } else {
+          $("#burgermenu-page").hide();
+          $(".header-linkslist").hide();
+          
+          $("#burgermenu-openbutton").show();
+      }
+    }
 
-    // closeButton.addEventListener("click", function() {
-    //     burgermenu.classList.remove('active');
-    // });
+    // Checking default page size
+    burgermenuDisplay();
+
+    window.addEventListener('resize', function(event) {
+        burgermenuDisplay();
+    }, true);
 });

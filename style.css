@@ -95,6 +95,30 @@ header {
   color: var(--soft-orange);
 }
 
+.burgermenu-openclose-button {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.burgermenu-openclose-button > img {
+  height: 100%;
+}
+
+.burgermenu-page {
+  width: 60%;
+  height: 100%;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+}
+
 main {
   width: 100%;
 
@@ -391,10 +415,6 @@ main {
     gap: 30px;
 
     padding: 15px;
-  }
-
-  .header-linkslist {
-    display: none;
   }
 
   main {
