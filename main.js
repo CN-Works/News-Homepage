@@ -18,9 +18,14 @@ $(document).ready(function(){
       }
     }
 
-    // Checking default page size
+    // Checking default page size & resize management
     burgermenuDisplay();
 
+    window.addEventListener('resize', function(event) {
+        burgermenuDisplay();
+    }, true);
+
+    // Burgermenu buttons interactions
     $("#burgermenu-openbutton").click(function() {
         $("#burgermenu-page").fadeIn({duration: 300});
     })
@@ -28,8 +33,4 @@ $(document).ready(function(){
     $("#burgermenu-closebutton").click(function() {
         $("#burgermenu-page").fadeOut({duration: 300});
     })
-
-    window.addEventListener('resize', function(event) {
-        burgermenuDisplay();
-    }, true);
 });
